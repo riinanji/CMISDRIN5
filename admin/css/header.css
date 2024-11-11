@@ -1,0 +1,57 @@
+
+        .body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0; /* Remove default body margin */
+        }
+        .header {
+            background-color: gray;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            height: 60px;
+            padding: 0 15px; 
+            position: relative; /* Ensure positioning */
+        }
+        .sidebar-toggle-box {
+            background-color: #332e2e;
+            border: none;
+            border-radius: 4px;
+            padding: 8px;
+            cursor: pointer;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            position: absolute; /* Position it relative to the header */
+            left: 15px; /* Adjust this for placement */
+            z-index: 10; /* Ensure it sits above other content */
+        }
+        .fa-bars {
+            color: #fff;
+            font-size: 24px; 
+        }
+        .navbar-brand {
+            font-size: 1.7em;
+            color: #fff;
+            text-align: center;
+            flex-grow: 1; 
+            text-decoration: none;
+        }
+        .content {
+            transition: margin-left 0.3s; /* Smooth transition for content */
+            margin-left: 200px; /* Default sidebar width */
+        }
+        .content.expand {
+            margin-left: 0; /* Shift content to full width when sidebar is hidden */
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f8f9fa;
+            height: 100vh;
+            position: fixed;
+            transition: margin-left 0.3s; /* Smooth transition for sidebar */
+            margin-left: -200px; /* Start hidden */
+        }
+        .sidebar.show {
+            margin-left: 0; /* Show sidebar */
+        }
+    

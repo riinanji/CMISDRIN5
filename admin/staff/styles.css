@@ -1,0 +1,99 @@
+/* Style for the page title */
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Style for the 'Add New Staff' button */
+a.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;
+    border: 1px solid #28a745;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+a.btn:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Bio data style for the table */
+table {
+    width: 90%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+thead th {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 2px solid #ccc;
+}
+
+tbody td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style for profile pictures */
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+tbody tr {
+    display: grid;
+    grid-template-columns: 60px 2fr 2fr 1fr 1fr;
+    align-items: center;
+    padding: 10px 0;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Bio data specific content alignment */
+tbody td:first-child {
+    text-align: center;
+}
+
+tbody td:last-child {
+    text-align: center;
+}
+
+/* Add spacing between sections in bio data format */
+.bio-section {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirect root domain to /cmisdrin5 folder
+    RewriteCond %{REQUEST_URI} ^/$
+    RewriteRule ^$ /cmisdrin5/ [L]
+
+    # Ensure internal routing for files within /cmisdrin5
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /cmisdrin5/$1 [L]
+</IfModule>
